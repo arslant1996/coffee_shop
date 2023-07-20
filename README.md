@@ -12,6 +12,7 @@ Coffee Hub is a Ruby on Rails web application for managing coffee orders.
 - [Running the Server](#running-the-server)
 - [Running Sidekiq](#running-sidekiq)
 - [Running Test Cases](#running-test-cases)
+- [Demo Video](#demo-video)
 
 ## Introduction
 
@@ -84,3 +85,7 @@ bundle exec sidekiq
 To run the test cases for Coffee Hub, use the following command:
 
 bundle exec rspec spec
+
+## Demo Video
+
+Watch the demo of Coffee Hub in action: [Demo Video](https://www.loom.com/share/81bdad07b8434e3eaf04933bc11987ec)
