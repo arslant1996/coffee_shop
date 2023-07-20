@@ -52,7 +52,7 @@
               <td>
                 <%= number_field_tag "order[order_items_attributes][][quantity]", order_item.quantity, class: "form-control" %>
               </td>
-              <td><a class="btn btn-danger remove-checkbox" >Remove</a></td>
+              <td><a class="btn btn-danger remove-checkbox" onclick="removeItem()" >Remove</a></td>
             </tr>
           <% end %>
         <% end %>
@@ -94,12 +94,11 @@
         </select>
       </td>
       <td><input type="number" name="order[order_items_attributes][][quantity]" class="form-control" /></td>
-      <td><a class="btn btn-danger remove-checkbox" >Remove</a></td>
+      <td><a class="btn btn-danger remove-checkbox" onclick="removeItem()">Remove</a></td>
     `;
     orderItemsTable.appendChild(newRow);
   }
-
-  document.addEventListener('DOMContentLoaded', () => {
+  function removeItem() {
     const orderItemsTable = document.querySelector('table > tbody');
 
     orderItemsTable.addEventListener('click', (e) => {
@@ -108,5 +107,5 @@
         row.remove();
       }
     });
-  });
+  }
 </script>

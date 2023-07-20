@@ -13,7 +13,7 @@
     <tbody>
       <% @discounts.each do |discount| %>
         <tr>
-          <td><%= "#{discount.item.name.titleize} (#{discount.item.id})" %></td>
+          <td><%= discount.item.name.titleize %></td>
           <td><%= discount.applicable_item&.name&.titleize || 'N/A' %></td>
           <td><%= discount.discount_rate %></td>
           <td><%= discount.cap_amount %></td>
